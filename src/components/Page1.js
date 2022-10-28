@@ -1,6 +1,6 @@
 import {
   Box,
-  Center,
+  Circle,
   Grid,
   Heading,
   HStack,
@@ -8,6 +8,7 @@ import {
   Progress,
   Stack,
   Text,
+  useColorModeValue,
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
@@ -82,165 +83,256 @@ const Page1 = () => {
         value={50}
         background="blue.500"
       />
+
+      {/* Page Content */}
+
       <Box pl="60" mb={"5"}>
         <Heading
           as="h1"
           size="lg"
           color="white"
           fontFamily="sans-serif"
-          py={"6"}
+          py={"5"}
           fontWeight="normal"
         >
           Please select a Transaction
         </Heading>
-        <Box>
+        <Box
+          border={"4px"}
+          borderColor="white"
+          rounded={"md"}
+          boxSize="fit-content"
+          bg={useColorModeValue("white", "gray.800")}
+          // shadow="2xl"
+          // borderWidth="4px"
+        >
           <Grid spacing="0" templateColumns="repeat(4, 0fr)">
-            <Center
+            <Box
               w="72"
               h="40"
               bg="white"
-              // p="6"
               roundedTopLeft="md"
               opacity="80%"
               bgGradient="linear(to-t,yellow.500 , yellow.300 )"
               bgColor={"yellow.500/80"}
               borderWidth="thin"
               borderColor={"blue.600"}
+              py="10"
+              px={"8"}
             >
               <HStack>
-                {/* <Box
-                  border={"white"}
-                  borderRadius="3xl"
-                  rounded="full"
-                  bg={"yellow.500"}
-                  h="80px"
-                  w="80px"
-                > */}
-                <CashDrawal />
-                {/* </Box> */}
-                <VStack
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                >
+                  <CashDrawal />
+                </Circle>
+                <Stack
                   textColor={"white"}
                   fontWeight="normal"
                   fontSize={"x-large"}
                   spacing="0.5"
+                  pl="2"
                 >
-                  <Box>Cash </Box>
+                  <Box textAlign={"start"}>Cash </Box>
                   <Box>Withdrawal</Box>
-                </VStack>
+                </Stack>
               </HStack>
-            </Center>
+            </Box>
 
-            <Center
+            <Box
               w="52"
               h="40"
               bgGradient="linear(to-b, blue.100, blue.50)"
               borderWidth="thin"
               borderColor={"blue.600"}
+              py="4"
+              px={"8"}
             >
-              <VStack>
-                <Balance />
-                <Text color="blue.600" fontWeight="semibold">
+              <VStack spacing={"4"}>
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                >
+                  <Balance />
+                </Circle>
+
+                <Text color="blue.600" fontWeight="semibold" fontSize={"small"}>
                   Balance Inquiry
                 </Text>
               </VStack>
-            </Center>
+            </Box>
 
-            <Center
+            <Box
               w="52"
               h="40"
               bgGradient="linear(to-b, blue.100, blue.50)"
               borderWidth="thin"
               borderColor={"blue.600"}
+              py="4"
+              px={"8"}
             >
-              <VStack>
-                <CreditCard />
-                <Text color="blue.600" fontWeight="semibold">
+              <VStack spacing={"4"}>
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                >
+                  <CreditCard />
+                </Circle>
+
+                <Box
+                  color="blue.600"
+                  fontWeight="semibold"
+                  fontSize={"small"}
+                  textAlign="start"
+                  w="full"
+                >
                   Credit Card Settlement
-                </Text>
+                </Box>
               </VStack>
-            </Center>
+            </Box>
 
-            <Center
+            <Box
               w="52"
               h="40"
               bgGradient="linear(to-b, blue.100, blue.50)"
               borderWidth="thin"
               borderColor={"blue.600"}
+              py="4"
+              px={"8"}
             >
-              <VStack>
-                <Other />
-                <Text color="blue.600" fontWeight="semibold">
+              <VStack spacing={"4"}>
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                >
+                  <Other />
+                </Circle>
+
+                <Text color="blue.600" fontWeight="semibold" fontSize={"small"}>
                   Other
                 </Text>
               </VStack>
-            </Center>
+            </Box>
 
-            <Center
+            <Box
               w="72"
               h="40"
               bg="white"
-              p="6"
+              // p="6"
               roundedBottomLeft="md"
               bgColor={"yellow.500"}
               opacity="80%"
               borderWidth="thin"
               borderColor={"blue.600"}
+              py="10"
+              px={"8"}
             >
               <HStack>
-                <Box>
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                >
                   <CashDeposit />
-                </Box>
-                <VStack>
-                  <Box>Cash</Box>
+                </Circle>
+                <Stack
+                  textColor={"white"}
+                  fontWeight="normal"
+                  fontSize={"x-large"}
+                  spacing="0.5"
+                  pl="2"
+                  // textAlign={"start"}
+                >
+                  <Box textAlign={"start"}>Cash</Box>
                   <Box> Deposit</Box>
-                </VStack>
+                </Stack>
               </HStack>
-            </Center>
+            </Box>
 
-            <Center
+            <Box
               w="52"
               h="40"
               bgGradient="linear(to-t, blue.100, blue.50)"
               borderWidth="thin"
               borderColor={"blue.600"}
+              py="4"
+              px={"8"}
             >
-              <VStack>
-                <InternalTransfare />
-                <Text color="blue.600" fontWeight="semibold">
+              <VStack spacing={"4"}>
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                >
+                  <InternalTransfare />
+                </Circle>
+
+                <Text color="blue.600" fontWeight="semibold" fontSize={"small"}>
                   Internal Transfare
                 </Text>
               </VStack>
-            </Center>
+            </Box>
 
-            <Center
+            <Box
               w="52"
               h="40"
               bgGradient="linear(to-t, blue.100, blue.50)"
               borderWidth="thin"
               borderColor={"blue.600"}
+              py="4"
+              px={"8"}
             >
               <VStack>
-                <ChequeBook />
-                <Text color="blue.600" fontWeight="semibold">
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                >
+                  <ChequeBook />
+                </Circle>
+
+                <Text color="blue.600" fontWeight="semibold" fontSize={"small"}>
                   Cheque Book Request
                 </Text>
               </VStack>
-            </Center>
+            </Box>
 
-            <Center
+            <Box
               w="52"
               h="40"
               bgGradient="linear(to-t, blue.100, blue.50)"
               borderWidth="thin"
               borderColor={"blue.600"}
+              py="4"
+              px={"8"}
             >
               <VStack>
-                <Exit />
-                <Text color="blue.600" fontWeight="semibold">
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                >
+                  <Exit />
+                </Circle>
+
+                <Text color="blue.600" fontWeight="semibold" fontSize={"small"}>
                   Exit/Take Card
                 </Text>
               </VStack>
-            </Center>
+            </Box>
           </Grid>
         </Box>
       </Box>

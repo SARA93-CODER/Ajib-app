@@ -4,8 +4,8 @@ const ChequeBook = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="71.629"
-      height="39.144"
+      width="60.629"
+      height="30.144"
       viewBox="0 0 71.629 39.144"
     >
       <g id="cheque" transform="translate(0.5 0.5)">

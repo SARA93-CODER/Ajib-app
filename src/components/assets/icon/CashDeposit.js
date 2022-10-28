@@ -6,8 +6,8 @@ export const CashDeposit = () => {
       id="Group_3977"
       data-name="Group 3977"
       xmlns="http://www.w3.org/2000/svg"
-      width="59.247"
-      height="59.247"
+      width="48.247"
+      height="46.247"
       viewBox="0 0 59.247 59.247"
     >
       <path

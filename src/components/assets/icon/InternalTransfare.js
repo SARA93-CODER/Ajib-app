@@ -4,8 +4,8 @@ const InternalTransfare = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="72.879"
-      height="50.182"
+      width="60.879"
+      height="40.182"
       viewBox="0 0 72.879 50.182"
     >
       <g

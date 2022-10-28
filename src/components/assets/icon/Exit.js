@@ -4,8 +4,8 @@ export const Exit = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="40.23"
-      height="40.229"
+      width="30.23"
+      height="30.229"
       viewBox="0 0 40.23 40.229"
     >
       <g id="cancel" transform="translate(1.414 1.414)">

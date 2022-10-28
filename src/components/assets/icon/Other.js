@@ -4,8 +4,8 @@ export const Other = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="57"
-      height="38.8"
+      width="50"
+      height="32.8"
       viewBox="0 0 57 38.8"
     >
       <g id="main_menu" transform="translate(0.5 0.5)" opacity="0.755">

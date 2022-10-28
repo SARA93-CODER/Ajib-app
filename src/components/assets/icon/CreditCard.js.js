@@ -4,8 +4,8 @@ export const CreditCard = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="72.35"
-      height="42.982"
+      width="60.35"
+      height="34.982"
       viewBox="0 0 72.35 42.982"
     >
       <g id="payment" transform="translate(0.5)">

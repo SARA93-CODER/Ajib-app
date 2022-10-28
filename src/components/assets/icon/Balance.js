@@ -4,8 +4,8 @@ const Balance = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="48.579"
-      height="48.424"
+      width="42.579"
+      height="42.424"
       viewBox="0 0 48.579 48.424"
     >
       <g id="balance" transform="translate(0.879 0.361)">
