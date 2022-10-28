@@ -11,6 +11,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
+import { FaPhoneAlt } from "react-icons/fa";
 import Background from "../images/background.jpg";
 import Logo from "../images/logo.png";
 import Weather from "../images/weather.png";
@@ -27,7 +28,6 @@ import InternalTransfare from "./assets/icon/InternalTransfare";
 
 const Page1 = () => {
   return (
-    // <Box>
     <Stack
       bgImage={Background}
       bgPosition="center"
@@ -82,7 +82,7 @@ const Page1 = () => {
         value={50}
         background="blue.500"
       />
-      <Box pl="60">
+      <Box pl="60" mb={"5"}>
         <Heading
           as="h1"
           size="lg"
@@ -245,17 +245,22 @@ const Page1 = () => {
         </Box>
       </Box>
 
-      {/* <Box color="white" gap="6">
-          <Box>
-            <FiPhoneCall />
-            <Text>Contact Center</Text>
+      {/* Footer */}
+
+      <HStack color="white" gap="2" justifyContent={"center"} pt="10">
+        <HStack>
+          <Box textColor={"yellow.600"} opacity="90%">
+            <FaPhoneAlt />
           </Box>
-          <Box>
-            <Text>Website: </Text>
-          </Box>
-        </Box> */}
+          <Text>Contact Center:</Text>
+          <Text textColor={"yellow.500"}>065003005</Text>
+        </HStack>
+        <HStack>
+          <Text>Website: </Text>
+          <Text textColor={"yellow.500"}>www.ajib.com</Text>
+        </HStack>
+      </HStack>
     </Stack>
-    // </Box>
   );
 };
 
