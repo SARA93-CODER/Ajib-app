@@ -1,10 +1,10 @@
 import React from "react";
 
-const ChequeBook = () => {
+export const ChequeDeposit = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="60.629"
+      width="52.629"
       height="30.144"
       viewBox="0 0 71.629 39.144"
     >
@@ -69,5 +69,3 @@ const ChequeBook = () => {
     </svg>
   );
 };
-
-export default ChequeBook;

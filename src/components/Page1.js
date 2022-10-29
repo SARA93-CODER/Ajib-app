@@ -25,7 +25,18 @@ import {
   Exit,
   InternalTransfare,
   Other,
-} from "./assets/P1icons";
+} from "./assets";
+
+// import {
+//   Balance,
+//   CashDeposit,
+//   CashDrawal,
+//   ChequeBook,
+//   CreditCard,
+//   Exit,
+//   InternalTransfare,
+//   Other,
+// } from "./assets/icon";
 
 const Page1 = () => {
   return (
@@ -337,7 +348,7 @@ const Page1 = () => {
 
       <HStack color="white" gap="2" justifyContent={"center"} pt="10">
         <HStack>
-          <Box textColor={"yellow.600"} opacity="90%">
+          <Box textColor={"yellow.500"} opacity="90%">
             <FaPhoneAlt />
           </Box>
           <Text>Contact Center:</Text>

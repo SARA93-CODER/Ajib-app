@@ -1,6 +1,6 @@
 import React from "react";
 
-const Balance = () => {
+export const Balance = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,5 +25,3 @@ const Balance = () => {
     </svg>
   );
 };
-
-export default Balance;

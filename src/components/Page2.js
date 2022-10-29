@@ -2,6 +2,7 @@ import {
   Box,
   Circle,
   Grid,
+  GridItem,
   Heading,
   HStack,
   Image,
@@ -11,9 +12,19 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
+import { FaPhoneAlt } from "react-icons/fa";
 import Background from "../images/background.jpg";
 import Logo from "../images/logo.png";
 import Weather from "../images/weather.png";
+import {
+  Back,
+  ChequeDeposit,
+  EFAWATEER,
+  Exit,
+  MiniStatement,
+  PINchange,
+  PINunlock,
+} from "./assets";
 
 const Page2 = () => {
   return (
@@ -82,20 +93,19 @@ const Page2 = () => {
           Please select a Transaction
         </Heading>
         <Box
-          border={"4px"}
-          borderColor="white"
           rounded={"md"}
           boxSize="fit-content"
           bg={useColorModeValue("white", "gray.800")}
-          // shadow="2xl"
-          // borderWidth="4px"
+          border={"4px"}
+          borderColor="white"
+          // boxShadow="2xl"
         >
           <Grid
-            spacing="0"
-            templateColumns="repeat(4, 0fr)"
-            templateRows="repeat(2, 0fr)"
+            templateRows="repeat(2, 1fr)"
+            templateColumns="repeat(4, 1fr)"
+            gap={0}
           >
-            <Box
+            <GridItem
               w="52"
               h="40"
               bgGradient="linear(to-b, blue.100, blue.50)"
@@ -103,25 +113,223 @@ const Page2 = () => {
               borderColor={"blue.600"}
               py="4"
               px={"8"}
+              rowSpan={1}
+              colSpan={1}
             >
-              <Stack spacing={"4"}>
+              <Stack spacing={"4"} px="7">
                 <Circle
                   size="80px"
-                  bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
+                  bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
                   color="white"
                   border={"4px"}
+                  opacity="85%"
                 >
-                  <Balance />
+                  <PINunlock />
                 </Circle>
 
                 <Text color="blue.600" fontWeight="semibold" fontSize={"small"}>
-                  Balance Inquiry
+                  PIN Unlock
                 </Text>
               </Stack>
-            </Box>
+            </GridItem>
+
+            <GridItem
+              w="52"
+              h="40"
+              bgGradient="linear(to-b, blue.100, blue.50)"
+              borderWidth="thin"
+              borderColor={"blue.600"}
+              py="4"
+              px={"8"}
+              rowSpan={1}
+              colSpan={1}
+            >
+              <Stack
+                spacing={"4"}
+                justifyContent="center"
+                justifyItems={"center"}
+                px="7"
+              >
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                  opacity="85%"
+                >
+                  <EFAWATEER />
+                </Circle>
+
+                <Text color="blue.600" fontWeight="semibold" fontSize={"11px"}>
+                  eFAWATEERcom
+                </Text>
+              </Stack>
+            </GridItem>
+
+            <GridItem
+              w="52"
+              h="40"
+              bgGradient="linear(to-b, blue.100, blue.50)"
+              borderWidth="thin"
+              borderColor={"blue.600"}
+              py="4"
+              px={"8"}
+              rowSpan={1}
+              colSpan={1}
+            >
+              <Stack spacing={"4"} px="7">
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                  opacity="85%"
+                >
+                  <Exit />
+                </Circle>
+
+                <Text color="blue.600" fontWeight="semibold" fontSize={"12px"}>
+                  Exit/ Take Card
+                </Text>
+              </Stack>
+            </GridItem>
+
+            <GridItem
+              w="52"
+              h="80"
+              bgGradient="linear(to-b, blue.100, blue.50)"
+              borderWidth="thin"
+              borderColor={"blue.600"}
+              py="4"
+              px={"8"}
+              rowSpan={"2"}
+              colSpan={""}
+            >
+              <Stack spacing={"4"} px="7" py="12">
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                  opacity="85%"
+                >
+                  <Back />
+                </Circle>
+
+                <Text
+                  color="blue.600"
+                  fontWeight="semibold"
+                  fontSize={"md"}
+                  textAlign="center"
+                  pt={"2"}
+                >
+                  Back
+                </Text>
+              </Stack>
+            </GridItem>
+
+            <GridItem
+              w="52"
+              h="40"
+              bgGradient="linear(to-b, blue.100, blue.50)"
+              borderWidth="thin"
+              borderColor={"blue.600"}
+              py="4"
+              px={"8"}
+              rowSpan={1}
+              colSpan={1}
+            >
+              <Stack spacing={"4"} px="7">
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                  opacity="85%"
+                >
+                  <MiniStatement />
+                </Circle>
+
+                <Text color="blue.600" fontWeight="semibold" fontSize={"12px"}>
+                  Mini Statement
+                </Text>
+              </Stack>
+            </GridItem>
+
+            <GridItem
+              w="52"
+              h="40"
+              bgGradient="linear(to-b, blue.100, blue.50)"
+              borderWidth="thin"
+              borderColor={"blue.600"}
+              py="4"
+              px={"8"}
+              rowSpan={1}
+              colSpan={1}
+            >
+              <Stack spacing={"4"} px="7">
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                  opacity="85%"
+                >
+                  <PINchange />
+                </Circle>
+
+                <Text color="blue.600" fontWeight="semibold" fontSize={"12px"}>
+                  PIN Change
+                </Text>
+              </Stack>
+            </GridItem>
+
+            <GridItem
+              w="52"
+              h="40"
+              bgGradient="linear(to-b, blue.100, blue.50)"
+              borderWidth="thin"
+              borderColor={"blue.600"}
+              py="4"
+              px={"8"}
+              rowSpan={1}
+              colSpan={1}
+            >
+              <Stack spacing={"4"} px="7">
+                <Circle
+                  size="80px"
+                  bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
+                  color="white"
+                  border={"4px"}
+                  opacity="85%"
+                >
+                  <ChequeDeposit />
+                </Circle>
+
+                <Text color="blue.600" fontWeight="semibold" fontSize={"11px"}>
+                  Cheque Deposit
+                </Text>
+              </Stack>
+            </GridItem>
           </Grid>
         </Box>
       </Box>
+
+      {/* Footer */}
+
+      <HStack color="white" gap="2" justifyContent={"center"} pt="10">
+        <HStack>
+          <Box textColor={"yellow.500"} opacity="90%">
+            <FaPhoneAlt />
+          </Box>
+          <Text>Contact Center:</Text>
+          <Text textColor={"yellow.500"}>065003005</Text>
+        </HStack>
+        <HStack>
+          <Text>Website: </Text>
+          <Text textColor={"yellow.500"}>www.ajib.com</Text>
+        </HStack>
+      </HStack>
     </Stack>
   );
 };

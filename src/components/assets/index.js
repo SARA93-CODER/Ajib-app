@@ -1,2 +1,2 @@
-export * from "./P1icons";
-export * from "./P2icons";
+export * from "./page1icons";
+export * from "./page2icons";

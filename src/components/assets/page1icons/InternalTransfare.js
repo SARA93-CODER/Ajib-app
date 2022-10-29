@@ -1,6 +1,6 @@
 import React from "react";
 
-const InternalTransfare = () => {
+export const InternalTransfare = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -57,5 +57,3 @@ const InternalTransfare = () => {
     </svg>
   );
 };
-
-export default InternalTransfare;
