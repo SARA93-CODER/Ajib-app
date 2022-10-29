@@ -17,15 +17,15 @@ import Background from "../images/background.jpg";
 import Logo from "../images/logo.png";
 import Weather from "../images/weather.png";
 import {
+  Balance,
   CashDeposit,
   CashDrawal,
+  ChequeBook,
   CreditCard,
   Exit,
+  InternalTransfare,
   Other,
-} from "./assets/icon";
-import Balance from "./assets/icon/Balance";
-import ChequeBook from "./assets/icon/ChequeBook";
-import InternalTransfare from "./assets/icon/InternalTransfare";
+} from "./assets/P1icons";
 
 const Page1 = () => {
   return (
@@ -55,8 +55,8 @@ const Page1 = () => {
         </Stack>
 
         <HStack h="80px" w="400px" bg="transparent">
-          <VStack>
-            <Text
+          <Stack>
+            <Box
               fontSize="sm"
               textColor="white"
               // justifyContent={"end"}
@@ -64,15 +64,11 @@ const Page1 = () => {
               // justifyItems={"end"}
             >
               August 28,10.20
-            </Text>
-            <Text
-              fontWeight="semibold"
-              textColor="white"
-              // justifyContent={"end"}
-            >
+            </Box>
+            <Box fontWeight="semibold" textColor="white" textAlign={"end"}>
               24&deg; C
-            </Text>
-          </VStack>
+            </Box>
+          </Stack>
           <Image src={Weather} h="80px" w="30" />
         </HStack>
       </HStack>
