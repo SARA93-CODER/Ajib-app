@@ -93,17 +93,16 @@ const Page2 = () => {
           Please select a Transaction
         </Heading>
         <Box
-          rounded={"md"}
+          border={"2px"}
+          borderRightRadius="lg"
+          borderColor={"white"}
           boxSize="fit-content"
           bg={useColorModeValue("white", "gray.800")}
-          border={"4px"}
-          borderColor="white"
-          // boxShadow="2xl"
         >
           <Grid
-            templateRows="repeat(2, 1fr)"
-            templateColumns="repeat(4, 1fr)"
-            gap={0}
+            templateRows="repeat(2, 0fr)"
+            templateColumns="repeat(4, 0fr)"
+            spacing="0"
           >
             <GridItem
               w="52"
@@ -121,8 +120,9 @@ const Page2 = () => {
                   size="80px"
                   bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
                   color="white"
-                  border={"4px"}
                   opacity="85%"
+                  border={"4px"}
+                  borderTopWidth={"8px"}
                 >
                   <PINunlock />
                 </Circle>
@@ -154,8 +154,9 @@ const Page2 = () => {
                   size="80px"
                   bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
                   color="white"
-                  border={"4px"}
                   opacity="85%"
+                  border={"4px"}
+                  borderTopWidth={"8px"}
                 >
                   <EFAWATEER />
                 </Circle>
@@ -183,6 +184,7 @@ const Page2 = () => {
                   bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
                   color="white"
                   border={"4px"}
+                  borderTopWidth={"8px"}
                   opacity="85%"
                 >
                   <Exit />
@@ -211,6 +213,7 @@ const Page2 = () => {
                   bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
                   color="white"
                   border={"4px"}
+                  borderTopWidth={"8px"}
                   opacity="85%"
                 >
                   <Back />
@@ -245,6 +248,7 @@ const Page2 = () => {
                   bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
                   color="white"
                   border={"4px"}
+                  borderTopWidth={"8px"}
                   opacity="85%"
                 >
                   <MiniStatement />
@@ -273,6 +277,7 @@ const Page2 = () => {
                   bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
                   color="white"
                   border={"4px"}
+                  borderTopWidth={"8px"}
                   opacity="85%"
                 >
                   <PINchange />
@@ -301,6 +306,7 @@ const Page2 = () => {
                   bgGradient="linear(to-t, yellow.500, yellow.400, yellow.500)"
                   color="white"
                   border={"4px"}
+                  borderTopWidth={"8px"}
                   opacity="85%"
                 >
                   <ChequeDeposit />

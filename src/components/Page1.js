@@ -105,13 +105,9 @@ const Page1 = () => {
           Please select a Transaction
         </Heading>
         <Box
-          border={"4px"}
-          borderColor="white"
-          rounded={"md"}
+          rounded="lg"
           boxSize="fit-content"
           bg={useColorModeValue("white", "gray.800")}
-          // shadow="2xl"
-          // borderWidth="4px"
         >
           <Grid spacing="0" templateColumns="repeat(4, 0fr)">
             <Box
@@ -120,7 +116,7 @@ const Page1 = () => {
               bg="white"
               roundedTopLeft="md"
               opacity="80%"
-              bgGradient="linear(to-t,yellow.500 , yellow.300 )"
+              bgGradient="linear(to-t,yellow.500 , yellow.400 )"
               bgColor={"yellow.500/80"}
               borderWidth="thin"
               borderColor={"blue.600"}
@@ -133,6 +129,7 @@ const Page1 = () => {
                   bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
                   color="white"
                   border={"4px"}
+                  borderTopWidth={"8px"}
                 >
                   <CashDrawal />
                 </Circle>
@@ -164,6 +161,7 @@ const Page1 = () => {
                   bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
                   color="white"
                   border={"4px"}
+                  borderTopWidth={"8px"}
                 >
                   <Balance />
                 </Circle>
@@ -189,6 +187,7 @@ const Page1 = () => {
                   bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
                   color="white"
                   border={"4px"}
+                  borderTopWidth={"8px"}
                 >
                   <CreditCard />
                 </Circle>
@@ -220,6 +219,7 @@ const Page1 = () => {
                   bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
                   color="white"
                   border={"4px"}
+                  borderTopWidth={"8px"}
                 >
                   <Other />
                 </Circle>
@@ -249,6 +249,7 @@ const Page1 = () => {
                   bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
                   color="white"
                   border={"4px"}
+                  borderTopWidth={"8px"}
                 >
                   <CashDeposit />
                 </Circle>
@@ -281,6 +282,7 @@ const Page1 = () => {
                   bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
                   color="white"
                   border={"4px"}
+                  borderTopWidth={"8px"}
                 >
                   <InternalTransfare />
                 </Circle>
@@ -306,6 +308,7 @@ const Page1 = () => {
                   bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
                   color="white"
                   border={"4px"}
+                  borderTopWidth={"8px"}
                 >
                   <ChequeBook />
                 </Circle>
@@ -331,6 +334,7 @@ const Page1 = () => {
                   bgGradient="linear(to-t, yellow.500, yellow.200, yellow.500)"
                   color="white"
                   border={"4px"}
+                  borderTopWidth={"8px"}
                 >
                   <Exit />
                 </Circle>
